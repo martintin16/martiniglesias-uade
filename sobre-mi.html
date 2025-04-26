@@ -3,96 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Sobre mi</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index">Home</a></li>
-          <li><a href="avisos">Avisos</a></li>
-          <li>Sobre mi</li>
-          <li><a href="materias-2025">Materias</a></li>
-          <li><a href="contacto">Contacto</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg light-blue-bg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="avisos">Avisos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="sobre-mi">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="materias-2025">Materias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <img src="public/img/LogoUADE.png" alt="logo-uade" height="24" />
+        </div>
       </nav>
-      <h2>Esta es mi descripcion</h2>
+      <h2 class="text-center margin-20 dark-gray-color">
+        Esta es mi descripcion
+      </h2>
     </header>
     <main>
-      <section>
-        <div>
-          <img
-            style="height: 500px"
-            src="./public/img/Foto cv.jpg"
-            alt="Foto perfil"
-          />
-          <p>
-            Soy Martin Iglesias, actualmente me encuentro cursando la
-            licenciatura en gestion de tecnologia de la informacion pero ya he
-            cursado anteriormente la carrera de Ing. industrial, primero en UTN
-            y luego en UADE.
-          </p>
-          <p>
-            Vivo en Buenos Aires, especificamente en zona sur, Florencio Varela,
-            tengo 29 años.
-          </p>
-        </div>
-        <div>
-          <h3>Eleccion de carrera:</h3>
-          <p>
-            Decidi elegir esta carrera principalmente por cuestiones laborales,
-            ya que hoy en dia me encuentro trabajando como Software Engineer en
-            una empresa que implementa servicios tecnologicos para agilizar y
-            automatizar procesos de inmigracion.
-          </p>
-        </div>
-        <div>
-          <h3>Intereses y conocimientos:</h3>
-          <p>
-            Me interesa poder justificar mi experiencia laboral con estudios mas
-            robustos, mediante esta carrera me interesaria conocer mas sobre los
-            fundamentos y las bases de la tecnologia, ya sean algoritmos,
-            arquitectura, conocer otros lenguajes y buenas practicas dentro de
-            lo posible.
-          </p>
-          <p>
-            Mis conocimientos se basan principalmente del lado del frontend,
-            teniendo skills en HTML, CSS, JavaScript, frameworks como VUE y
-            NUXT, apoyados principalmente en tailwind pero tambien conozco
-            bootstrap muy bien.
-          </p>
-          <p>
-            Si bien del lado del backend no me considero un experto, pero
-            actualmente tengo la capacidad de poder crear CRUDS o modificaciones
-            en servicios escalables que esten realizados previamente.
-          </p>
-        </div>
-        <div>
-          <h3>Conclusiones:</h3>
-          <p>
-            A traves del tiempo me gustaria poder seguir mejorando mis
-            capacidades mediante esta carrera y al trabajo para asi poder seguir
-            escalando dentro de la industria primero a nivel desarrollador y
-            luego ir por el lado del liderazgo llegando a tener mi propio equipo
-            o como manager.
-          </p>
-          <p>
-            Tambien me gustaria tener la capacidad de trabajar y poder resolver
-            cualquier reto o problematica mediante la creacion de softwares,
-            siempre manteniendo la innovacion, tecnologias actuales y un gran
-            equipo de trabajo donde estas tareas se hagan mas amenas.
-            Manteniendo siempre la motivacion y el crecimiento personal
-          </p>
+      <section class="flex flex-col items-center">
+        <div
+          id="carouselExample"
+          class="carousel slide carousel-container-styles"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="flex flex-col items-center gap-20">
+                <img
+                  class="profile-img"
+                  src="./public/img/Foto cv.jpg"
+                  alt="Foto perfil"
+                />
+                <h4 class="light-gray-color">Soy Martin Iglesias</h4>
+              </div>
+            </div>
+            <div class="carousel-item item-position-center">
+              <div class="flex flex-col" style="width: 75%">
+                <h4 class="light-gray-color">Situacion academica:</h4>
+                <p class="light-gray-color">
+                  Actualmente me encuentro cursando la licenciatura en gestion
+                  de tecnologia de la informacion pero ya he cursado
+                  anteriormente la carrera de Ing. industrial, primero en UTN y
+                  luego en UADE.
+                </p>
+                <p class="light-gray-color">
+                  Vivo en Buenos Aires, especificamente en zona sur, Florencio
+                  Varela, tengo 29 años.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item item-position-center">
+              <div class="flex flex-col" style="width: 75%">
+                <h4 class="light-gray-color">Eleccion de carrera:</h4>
+                <p class="light-gray-color">
+                  Decidi elegir esta carrera principalmente por cuestiones
+                  laborales, ya que hoy en dia me encuentro trabajando como
+                  Software Engineer en una empresa que implementa servicios
+                  tecnologicos para agilizar y automatizar procesos de
+                  inmigracion.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item item-position-center">
+              <div class="flex flex-col" style="width: 75%">
+                <h4 class="light-gray-color">Intereses y conocimientos:</h4>
+                <p class="light-gray-color">
+                  Me interesa poder justificar mi experiencia laboral con
+                  estudios mas robustos, mediante esta carrera me interesaria
+                  conocer mas sobre los fundamentos y las bases de la
+                  tecnologia, ya sean algoritmos, arquitectura, conocer otros
+                  lenguajes y buenas practicas dentro de lo posible.
+                </p>
+                <p class="light-gray-color">
+                  Mis conocimientos se basan principalmente del lado del
+                  frontend, teniendo skills en HTML, CSS, JavaScript, frameworks
+                  como VUE y NUXT, apoyados principalmente en tailwind pero
+                  tambien conozco bootstrap muy bien.
+                </p>
+                <p class="light-gray-color">
+                  Si bien del lado del backend no me considero un experto, pero
+                  actualmente tengo la capacidad de poder crear CRUDS o
+                  modificaciones en servicios escalables que esten realizados
+                  previamente.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item item-position-center">
+              <div class="flex flex-col" style="width: 75%">
+                <h4 class="light-gray-color">Conclusiones:</h4>
+                <p class="light-gray-color">
+                  A traves del tiempo me gustaria poder seguir mejorando mis
+                  capacidades mediante esta carrera y al trabajo para asi poder
+                  seguir escalando dentro de la industria primero a nivel
+                  desarrollador y luego ir por el lado del liderazgo llegando a
+                  tener mi propio equipo o como manager.
+                </p>
+                <p class="light-gray-color">
+                  Tambien me gustaria tener la capacidad de trabajar y poder
+                  resolver cualquier reto o problematica mediante la creacion de
+                  softwares, siempre manteniendo la innovacion, tecnologias
+                  actuales y un gran equipo de trabajo donde estas tareas se
+                  hagan mas amenas. Manteniendo siempre la motivacion y el
+                  crecimiento personal
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item item-position-center">
+              <div class="flex flex-col" style="width: 75%">
+                <h4 class="light-gray-color">Contacto y despedida:</h4>
+                <p class="light-gray-color">
+                  Espero que con esto puedan conocerme un poco mas tanto de mi
+                  personalmente como de mi ambito y metas laborales.
+                </p>
+                <p class="light-gray-color">
+                  Contacto: martiglesias@uade.edu.ar
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
     <footer>
-      <h3>Contacto y despedida</h3>
-      <p>
-        Espero que con esto puedan conocerme un poco mas tanto de mi
-        personalmente como de mi ambito y metas laborales.
-      </p>
-      <p>contacto: martiglesias@uade.edu.ar</p>
+      <p>&copy; 2025 Martin Iglesias</p>
+      <p>Curso: 15130 / Profesora: Patricia Litovicius</p>
     </footer>
   </body>
 </html>

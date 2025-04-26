@@ -3,53 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Avisos</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index">Home</a></li>
-          <li>Avisos</li>
-          <li><a href="sobre-mi">Sobre mi</a></li>
-          <li><a href="materias-2025">Materias</a></li>
-          <li><a href="contacto">Contacto</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg light-blue-bg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="avisos">Avisos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre-mi">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="materias-2025">Materias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <img src="public/img/LogoUADE.png" alt="logo-uade" height="24" />
+        </div>
       </nav>
-      <h2>Avisos y Pendientes</h2>
+      <h2 class="text-center margin-20 dark-gray-color">Avisos y Pendientes</h2>
     </header>
     <main>
-      <section>
-        <div>
-          <h3>Arquitectura de Computadores:</h3>
-          <ul>
-            <li>Revisar y terminar entregas pendientes</li>
-            <li>Ponerme al dia con la parte de circuitos electricos</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Sistemas de la Informacion:</h3>
-          <ul>
-            <li>
-              Esperar a que el profesor nos de el OK de nuestre empresa elegida
+      <section class="flex flex-col items-center gap-20">
+        <div class="text-card">
+          <h4 class="text-center margin-10 dark-gray-color">
+            Arquitectura de Computadores
+          </h4>
+          <div class="divider"></div>
+          <ul class="margin-10 tasks-list">
+            <li class="dark-gray-color">
+              Revisar y terminar entregas pendientes
+            </li>
+            <li class="dark-gray-color">
+              Esperar la nota del primer examen parcial
             </li>
           </ul>
         </div>
-        <div>
-          <h3>Fundamentos de Informatica:</h3>
-          <ul>
-            <li>Estudiar el lenguaje Python</li>
-            <li>Realizar ejercicios de algoritmos</li>
+        <div class="text-card">
+          <h4 class="text-center margin-10 dark-gray-color">
+            Sistemas de la Informacion:
+          </h4>
+          <div class="divider"></div>
+          <ul class="margin-10 tasks-list">
+            <li class="dark-gray-color">
+              Seguir trabajando junto con mi equipo en el trabajo integrador
+            </li>
           </ul>
         </div>
-        <div>
-          <h3>Diseño y Desarrollo Web:</h3>
-          <ul>
-            <li>Realizar entrega del ejercicio integrador de HTML</li>
-            <li>Revisar siguientes UVAS sobre los estilos en CSS</li>
+        <div class="text-card">
+          <h4 class="text-center margin-10 dark-gray-color">
+            Fundamentos de Informatica:
+          </h4>
+          <div class="divider"></div>
+          <ul class="margin-10 tasks-list">
+            <li class="dark-gray-color">Estudiar el lenguaje Python</li>
+            <li class="dark-gray-color">Realizar ejercicios de algoritmos</li>
+          </ul>
+        </div>
+        <div class="text-card">
+          <h4 class="text-center margin-10 dark-gray-color">
+            Diseño y Desarrollo Web:
+          </h4>
+          <div class="divider"></div>
+          <ul class="margin-10 tasks-list">
+            <li class="dark-gray-color">
+              Realizar entrega del ejercicio integrador de HTML
+            </li>
+            <li class="dark-gray-color">
+              Revisar siguientes UVAS sobre los estilos en CSS
+            </li>
           </ul>
         </div>
       </section>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <footer>
+      <p>&copy; 2025 Martin Iglesias</p>
+      <p>Curso: 15130 / Profesora: Patricia Litovicius</p>
+    </footer>
   </body>
 </html>

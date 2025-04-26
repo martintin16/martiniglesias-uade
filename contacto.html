@@ -3,41 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Contacto</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index">Home</a></li>
-          <li><a href="avisos">Avisos</a></li>
-          <li><a href="sobre-mi">Sobre mi</a></li>
-          <li><a href="materias-2025">Materias</a></li>
-          <li>Contacto</li>
-        </ul>
+      <nav class="navbar navbar-expand-lg light-blue-bg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="avisos">Avisos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre-mi">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="materias-2025">Materias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+          <img src="public/img/LogoUADE.png" alt="logo-uade" height="24" />
+        </div>
       </nav>
-      <h2>Contacto</h2>
+      <h2 class="text-center margin-20 dark-gray-color">Contacto</h2>
     </header>
     <main>
-      <section>
-        <div>
-          <form action="#" method="post">
-            <label for="name">Nombre:</label>
-            <br />
-            <input type="text" id="name" name="name" />
-            <br />
-            <label for="email">Email:</label>
-            <br />
-            <input type="text" id="email" name="email" />
-            <br />
-            <label for="message">Escriba su mensaje aqui:</label>
-            <br />
-            <textarea name="message" id="message" rows="5"></textarea>
-            <br />
-            <button type="submit">Enviar</button>
+      <section class="flex flex-col items-center">
+        <div class="form-container">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label dark-gray-color"
+                >Nombre y Apellido</label
+              >
+              <input type="text" class="form-control" id="name" />
+              <div id="emailHelp" class="form-text">
+                Ingrese su nombre y apellido.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label dark-gray-color"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">Ingrese su Email aqui.</div>
+            </div>
+            <div class="mb-3">
+              <label for="asunto" class="form-label dark-gray-color"
+                >Asunto</label
+              >
+              <input type="text" class="form-control" id="asunto" />
+              <div id="emailHelp" class="form-text">
+                Ingrese el asunto de su mensaje.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label dark-gray-color"
+                >Mensaje</label
+              >
+              <textarea class="form-control" id="message" rows="3"></textarea>
+              <div id="emailHelp" class="form-text">Deje su mensaje aqui.</div>
+            </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
           </form>
         </div>
       </section>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <footer>
+      <p>&copy; 2025 Martin Iglesias</p>
+      <p>Curso: 15130 / Profesora: Patricia Litovicius</p>
+    </footer>
   </body>
 </html>

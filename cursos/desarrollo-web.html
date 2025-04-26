@@ -3,112 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
     <title>Diseño y Desarrollo Web</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="../index">Home</a></li>
-          <li><a href="../avisos">Avisos</a></li>
-          <li><a href="../sobre-mi">Sobre mi</a></li>
-          <li><a href="../materias-2025">Materias</a></li>
-          <li><a href="../contacto">Contacto</a></li>
-        </ul>
-      </nav>
-      <h2>Diseño y Desarrollo Web</h2>
-    </header>
-    <main>
-      <section>
-        <h3>Contenido:</h3>
-        <div>
-          <h4>Unidad 1:</h4>
-          <ul>
-            <li>Protocolo HTTP.</li>
-            <li>Introduccion al HTML y HTML5.</li>
-            <li>Estructuras basicas.</li>
-            <li>Elementos de linea y de bloque.</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Unidad 2:</h4>
-          <ul>
-            <li>Hojas de estilo en cascada - CSS3.</li>
-            <li>Responsive Design.</li>
-            <li>Bootstrap.</li>
-            <li>Proceso de diseño y prototipado.</li>
-            <li>Tencnicas de maquetado.</li>
-            <li>Conceptos de usabilidad y experiencia de usuario.</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Unidad 3:</h4>
-          <ul>
-            <li>Concepto de JavaScript.</li>
-            <li>Integracion de JavaScript y CSS.</li>
-            <li>Uso de plugins y jQuery.</li>
-          </ul>
-        </div>
-        <div>
-          <h4>Unidad 4:</h4>
-          <ul>
-            <li>Dominios y hosting.</li>
-            <li>Mantenimiento y gestion.</li>
-            <li>Despliegue del sitio web.</li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <h3>Bibliografia:</h3>
-        <div>
-          <ul>
-            <li>
-              Niederst Robbins, J. (2013). HTML5 pocket reference. O'Reilly.
-            </li>
-            <li>Meyer, E. A. (2018). CSS pocket reference. O'Reilly.</li>
-            <li>Brown, E. (2016). Learning JavaScript. O'Reilly.</li>
-            <li>Schulz, R. G. (2009). Diseño web con CSS. Alfaomega.</li>
-            <li>
-              Firtman, M. (2012). jQuery mobile: Aplicaciones HTML5 para
-              móviles. Anaya Multimedia.
-            </li>
-            <li>
-              Muñoz Carmona, J. (2021). Despliegue de aplicaciones web.
-              Síntesis.
-            </li>
-            <li>
-              Freeman, E., Robson, E., Sierra, K., & Bates, B. (2004). Head
-              First Design Patterns. O'Reilly.
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <h3>Fechas de examenes:</h3>
-        <div>
-          <ul>
-            <li>Primer Parcial - 25/04/2025</li>
-            <li>Segundo Parcial - 13/06/2025</li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <h3>Actividades de la materia:</h3>
-        <div>
-          <h4>UVA 1:</h4>
-          <div>
-            <ul>
-              <li><a href="../sobre-mi">Actividad 1: HTML-Introduccion</a></li>
-              <li>
-                <a href="../materias-2025">Actividad 2: HTML-Etiquetas</a>
+      <nav class="navbar navbar-expand-lg light-blue-bg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index">Home</a>
               </li>
-              <li>
-                <a href="../index">Actividad 3: Ejercicio Integrador-HTML</a>
+              <li class="nav-item">
+                <a class="nav-link" href="../avisos">Avisos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../sobre-mi">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../materias-2025">Materias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contacto">Contacto</a>
               </li>
             </ul>
           </div>
+          <img src="../public/img/LogoUADE.png" alt="logo-uade" height="24" />
         </div>
+      </nav>
+      <h2 class="text-center margin-20 dark-gray-color">
+        Diseño y Desarrollo Web
+      </h2>
+    </header>
+    <main class="classes-container">
+      <section class="flex flex-col gap-20 section-width-left padding-20">
+        <article class="classes-card">
+          <h4 class="text-center margin-10 dark-gray-color">
+            Fechas de examenes:
+          </h4>
+          <div class="divider"></div>
+          <ul class="flex flex-col gap-10 margin-10">
+            <li class="dark-gray-color">- Primer Parcial - 25/04/2025</li>
+            <li class="dark-gray-color">- Segundo Parcial - 13/06/2025</li>
+          </ul>
+        </article>
+        <article class="classes-card">
+          <h4 class="text-center margin-10 dark-gray-color">Bibliografia:</h4>
+          <div class="divider"></div>
+          <ul class="flex flex-col gap-10 margin-10">
+            <li class="dark-gray-color">
+              - Niederst Robbins, J. (2013). HTML5 pocket reference. O'Reilly.
+            </li>
+            <li class="dark-gray-color">
+              - Meyer, E. A. (2018). CSS pocket reference. O'Reilly.
+            </li>
+            <li class="dark-gray-color">
+              - Brown, E. (2016). Learning JavaScript. O'Reilly.
+            </li>
+            <li class="dark-gray-color">
+              - Schulz, R. G. (2009). Diseño web con CSS. Alfaomega.
+            </li>
+            <li class="dark-gray-color">
+              - Firtman, M. (2012). jQuery mobile: Aplicaciones HTML5 para
+              móviles. Anaya Multimedia.
+            </li>
+            <li class="dark-gray-color">
+              - Muñoz Carmona, J. (2021). Despliegue de aplicaciones web.
+              Síntesis.
+            </li>
+            <li class="dark-gray-color">
+              - Freeman, E., Robson, E., Sierra, K., & Bates, B. (2004). Head
+              First Design Patterns. O'Reilly.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="section-width-right padding-20">
+        <article class="classes-card">
+          <h4 class="text-center margin-10 dark-gray-color">
+            Actividades de la materia:
+          </h4>
+          <div class="divider"></div>
+          <ul class="flex flex-col gap-10 margin-10">
+            <li class="dark-gray-color">
+              <a class="nav-link" href="../sobre-mi"
+                >- Actividad 1: HTML-Introduccion</a
+              >
+            </li>
+            <li class="dark-gray-color">
+              <a class="nav-link" href="../materias-2025"
+                >- Actividad 2: HTML-Etiquetas</a
+              >
+            </li>
+            <li class="dark-gray-color">
+              <a class="nav-link" href="../index"
+                >- Actividad 3: Ejercicio Integrador-HTML</a
+              >
+            </li>
+            <li class="dark-gray-color">
+              <a class="nav-link" href="../star-wars/index"
+                >- Actividad 4: Ejercicio Star-Wars</a
+              >
+            </li>
+          </ul>
+        </article>
       </section>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <footer>
+      <p>&copy; 2025 Martin Iglesias</p>
+      <p>Curso: 15130 / Profesora: Patricia Litovicius</p>
+    </footer>
   </body>
 </html>
