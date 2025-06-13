@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 2 - Datos Ingresados</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="container">
+    <h1>Ejercicio 2, Donde estudia?</h1>
+    <form style="margin-bottom: 15px" id="formulario">
+      <input type="text" id="nombre" placeholder="Nombre" required />
+      <input type="text" id="apellido" placeholder="Apellido" required />
+      <input type="text" id="universidad" placeholder="Universidad" required />
+      <button type="submit">Enviar</button>
+    </form>
+    <a href="index.html">
+      <button>Volver al índice</button>
+    </a>
+
+    <h2 id="saludo" class="highlight"></h2>
+
+    <script>
+      document
+        .getElementById("formulario")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const nombre = document.getElementById("nombre").value;
+          const apellido = document.getElementById("apellido").value;
+          const universidad = document.getElementById("universidad").value;
+          const mensaje = `Bienvenido ${nombre} ${apellido}, usted estudia en ${universidad}`;
+          document.getElementById("saludo").textContent = mensaje;
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 1 - Bienvenida Automática</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="container">
+    <h1>Ejercicio 1</h1>
+
+    <p id="mensaje" class="highlight"></p>
+    <a href="index.html">
+      <button>Volver al índice</button>
+    </a>
+
+    <script>
+      const nombre = "MARTIN";
+      const apellido = "IGLESIAS";
+      const universidad = "UADE";
+      const mensaje = `Bienvenido ${nombre} ${apellido} a la universidad ${universidad}`;
+      document.getElementById("mensaje").textContent = mensaje;
+    </script>
+  </body>
+</html>

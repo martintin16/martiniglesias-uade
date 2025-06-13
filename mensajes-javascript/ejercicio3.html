@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 3 - Días Vividos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="container">
+    <h1>Ejercicio 3</h1>
+    <form style="margin-bottom: 15px" id="formulario">
+      <input type="text" id="nombre" placeholder="Nombre" required />
+      <input type="text" id="apellido" placeholder="Apellido" required />
+      <input type="date" id="nacimiento" required />
+      <button type="submit">Enviar</button>
+    </form>
+    <a href="index.html">
+      <button>Volver al índice</button>
+    </a>
+
+    <h2 id="saludo" class="highlight"></h2>
+    <h3 id="dias" class="highlight"></h3>
+
+    <script>
+      document
+        .getElementById("formulario")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const nombre = document.getElementById("nombre").value;
+          const apellido = document.getElementById("apellido").value;
+          const nacimiento = new Date(
+            document.getElementById("nacimiento").value
+          );
+          const hoy = new Date();
+
+          const diferencia = hoy - nacimiento;
+          const diasVividos = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+
+          document.getElementById(
+            "saludo"
+          ).textContent = `Bienvenido ${nombre} ${apellido}`;
+          document.getElementById(
+            "dias"
+          ).textContent = `Has vivido durante ${diasVividos} días.`;
+        });
+    </script>
+  </body>
+</html>
