@@ -103,6 +103,16 @@ ul {
   width: 70%;
   padding: 20px;
 }
+#mensajeValidacion {
+  font-weight: bold;
+  margin-top: 10px;
+}
+#mensajeValidacion.error {
+  color: red;
+}
+#mensajeValidacion.success {
+  color: green;
+}
 /* Seccion materia desarrollo web */
 .classes-container {
   display: flex;
