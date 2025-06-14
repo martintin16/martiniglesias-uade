@@ -135,6 +135,18 @@ ul {
   border-radius: 5px;
   background-color: white;
 }
+.repo-link {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 0.85rem;
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.repo-link:hover {
+  text-decoration: underline;
+  color: #1c5980;
+}
 /* Seccion del footer */
 footer {
   width: 100%;
