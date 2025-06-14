@@ -8,6 +8,8 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Figtree", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 main {
   flex: 1;
@@ -82,6 +84,10 @@ ul {
   width: 1em;
 }
 /* Seccion sobre mi */
+.body-sobremi {
+  display: flex;
+  flex-direction: column;
+}
 .profile-img {
   height: 300px;
   width: 250px;
